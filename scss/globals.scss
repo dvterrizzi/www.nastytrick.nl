@@ -1,0 +1,23 @@
+// Variables: Background color
+$bg-main: rgb(30, 30, 30);
+$bg-body: rgb(20, 20, 20);
+$bg-section-odd: rgb(40, 40, 40);
+$bg-seciton-even: rgb(50, 50, 50);
+
+// Variables: Font color
+$color-text: white;
+$color-link: #006bb7;
+$color-footer: rgb(200, 200, 200);
+$color-socialbar-icon: rgb(200, 10, 10);
+$color-socialbar-icon-hover: rgb(200, 50, 50);
+
+// Fonts
+@font-face {
+    font-family: 'FaustinaLight';
+    src: url('fonts/Faustina-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Splash';
+    src: url('fonts/Splash-Regular.ttf');
+}

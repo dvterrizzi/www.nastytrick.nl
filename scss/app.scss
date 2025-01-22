@@ -1,0 +1,127 @@
+@use "reset" as *;
+@use "mixins" as *;
+@use "globals" as globals;
+
+html {
+    //background-color: $bg-main;
+
+    body {
+        background-color: globals.$bg-body;
+        font-family: "FaustinaLight", sans-serif;
+        color: globals.$color-text;
+
+        a,
+        .btn-link {
+            color: globals.$color-link;
+        }
+
+        div.container {
+            
+            @include md {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            @include lg {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+
+            header {
+                text-align: center;
+                font-family: 'Splash';
+                font-size: 1.1rem;
+            }
+
+            main {
+                section {
+                    //margin: 5px 10% 5px 10%;
+    
+                    &.section-text {
+                        background-color: globals.$bg-seciton-even;
+                        padding: 5px 10% 5px 10%;
+                    }
+
+                    .photo {
+                        display: block;
+                        max-width: 100%;
+                        max-height: 768px;
+                        height: auto;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        @include sm {
+                            width: 100%;
+                        }
+
+                        @include md {
+                            width: unset;
+                            //max-height: 450px;
+                        }
+
+                        @include lg {
+                            width: unset;
+                            //max-height: 450px;
+                        }
+
+                        @include xl {
+                            width: unset;
+                            //max-height: 700px;
+                        }
+                    }
+
+                    .section-header {
+                        text-align: center;
+                        font-family: 'RoadRage';
+                        font-size: 3em;
+                        color: rgb(200, 10, 10);
+                    }
+    
+                    .section-content {
+                        font-family: 'FaustinaLight';
+                    }
+                }
+            }
+    
+            footer {
+                width: 100%;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                padding-top: 10px;
+    
+                background-color: globals.$bg-body;
+                color: globals.$color-footer;
+    
+                div.socialbar {
+                    width: 100%;
+    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+    
+                    padding: 10px 0 10px 0;
+    
+                    background-color: globals.$bg-body;
+    
+                    font-size: 2em;
+    
+                    i {
+                        color: globals.$color-socialbar-icon;
+                        margin-right: 20px;
+                    }
+    
+                    i:hover {
+                        color: globals.$color-socialbar-icon-hover;
+                    }
+                }
+    
+                p.copyright {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

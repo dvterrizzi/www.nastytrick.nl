@@ -4,59 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="/css/app.css" /> -->
+    <script src="https://kit.fontawesome.com/ebf59de75b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css" />
     <link rel="icon" href="favicon.png" type="image/png" />
     <title>Nasty Trick</title>
 </head>
 
 <body>
-        <!-- Navbar -->
-        <div class="w3-top">
-            <div class="w3-bar w3-black w3-card">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-                    href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
-                        class="fa fa-bars"></i></a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large">Nasty Trick</a>
-                <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-                <a href="#live" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LIVE</a>
-                <a href="#media" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEDIA</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-                <!-- <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-padding-large w3-button" title="More">MORE <i
-                            class="fa fa-caret-down"></i></button>
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-                        <a href="#" class="w3-bar-item w3-button">Extras</a>
-                        <a href="#" class="w3-bar-item w3-button">Media</a>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-
-        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
-            style="margin-top:46px">
-            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-            <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-            <a href="#live" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LIVE</a>
-            <a href="#media" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MEDIA</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-        </div>
-
-    <div class="w3-content" style="max-width: 2000px; margin-top: 46px;">
+    <div class="container">
         <header>
             <h1>Nasty Trick</h1>
         </header>
-
         <main>
             <section>
-                <div id="img-container-1-nt" class="img-container" />
+                <img src="img/band/1.JPG" class="photo" alt="Nasty Trick on stage" />
             </section>
-            <section>
-                <h3 class="section-header"></h3>
+            <section class="section-text">
+                <!-- <h3 class="section-header"></h3> -->
                 <hr />
                 <p class="section-content">Als je op zoek bent naar een groovende liveband die de distortion op de
                     gitaar vol open draait, dan is Nasty Trick jouw band. Denk aan Queens of the Stone Age, Jimi Hendrix
@@ -77,34 +41,24 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
             </section> -->
             <section>
-                <div id="img-container-2-nt" class="img-container" />
+                <img src="img/band/table/4.JPG" class="photo" alt="Nasty Trick sitting at a table" />
             </section>
         </main>
-        <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-            <a href="https://www.facebook.com/nastytrickmusic" target="_blank">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            </a>
-            <a href="https://www.instagram.com/nastytrickmusic" target="_blank">
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-            </a>
-            <a href="https://www.youtube.com/@nastytrickmusic" target="_blank">
-                <i class="fa fa-youtube w3-hover-opacity"></i>
-            </a>
-            <p>&copy; 2024-2025 | info@nastytrick.nl</p>
+        <footer>
+            <div class="socialbar">
+                <a href="https://www.instagram.com/nastytrickmusic" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/nastytrickmusic" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/@nastytrickmusic" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2024-2025 | info@nastytrick.nl</p>
         </footer>
     </div>
-
-    <script>
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
 </body>
 
 </html>
