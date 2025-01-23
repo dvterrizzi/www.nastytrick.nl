@@ -55,29 +55,19 @@ html {
                             transition: transform .4s;
 
                             width: 100%;
-                            height: auto;
 
                             max-width: 100%;
-                            max-height: 768px;
+                            max-height: 800px;
                             
                             margin-left: auto;
                             margin-right: auto;
-    
-                            @include sm {
-                                //width: 100%;
-                            }
-    
-                            @include md {
-                                //max-height: 450px;
-                            }
-    
-                            @include lg {
-                                //max-height: 450px;
-                            }
-    
-                            @include xl {
-                                
-                            }
+                        }
+                    }
+
+                    &.section-video {
+                        video {
+                            width: 100%;
+                            height: auto;
                         }
                     }
 
