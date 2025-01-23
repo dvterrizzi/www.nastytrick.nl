@@ -12,5 +12,5 @@ This file uses the other scss files for seperation of concerns:
 `sass scss/app.scss app.css --watch`
 
 # Hosting
-Automatic CI/CD has been set up with GitHub pages using the master branch.
-There is only production.
+Automatic CI/CD has been set up with GitHub pages using the master branch, and linked to the domain using DNS records.
+There is only production. 
