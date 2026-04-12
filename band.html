@@ -7,99 +7,22 @@
 <html>
 
 <head>
-	<title>Terrizzi - The Band</title>
+	<title>Terrizzi</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/terrizzi.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<style>
-		/* Member portrait cards */
-		.members-grid {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			gap: 1.5rem;
-			margin: 2rem 0 3rem;
-		}
-
-		.member-card {
-			position: relative;
-			overflow: hidden;
-		}
-
-		.member-card .member-photo {
-			position: relative;
-			aspect-ratio: 2 / 3;
-			overflow: hidden;
-		}
-
-		.member-card .member-photo img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center top;
-			display: block;
-			transition: transform 0.4s ease;
-		}
-
-		.member-card:hover .member-photo img {
-			transform: scale(1.04);
-		}
-
-		.member-card .member-info {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			padding: 2.5rem 1rem 1rem;
-			background: linear-gradient(transparent, rgba(0, 0, 0, 0.88));
-			text-align: center;
-		}
-
-		.member-card .member-name {
-			display: block;
-			font-family: 'Merriweather', serif;
-			font-weight: 700;
-			font-size: 1rem;
-			letter-spacing: 0.05em;
-			color: #ffffff;
-			text-transform: uppercase;
-			line-height: 1.3;
-		}
-
-		.member-card .member-role {
-			display: block;
-			font-size: 0.75rem;
-			letter-spacing: 0.15em;
-			text-transform: uppercase;
-			color: rgba(255, 255, 255, 0.6);
-			margin-top: 0.25rem;
-		}
-
-		/* Responsive: 2 columns on tablet */
-		@media (max-width: 980px) {
-			.members-grid {
-				grid-template-columns: repeat(2, 1fr);
-				gap: 1rem;
-			}
-		}
-
-		/* Responsive: single column on small screens */
-		@media (max-width: 480px) {
-			.members-grid {
-				grid-template-columns: 1fr;
-				gap: 0.75rem;
-			}
-		}
-	</style>
+	<link rel="icon" type="image/svg+xml" href="assets/img/logo/Icon_Trans.svg" />
 </head>
 
-<body class="is-preload">
+<body class="is-preload page-inner">
 
 	<div id="wrapper">
 
 		<!-- Header -->
 		<header id="header">
-			<a href="index.html" class="logo">Terrizzi</a>
+			<a href="index.html" class="logo"><img src="assets/img/logo/Icon_Trans.svg" alt="" /><span class="logo-name">Terrizzi</span></a>
 		</header>
 
 		<!-- Nav -->
@@ -111,10 +34,8 @@
 				<li><a href="live.html">Live</a></li>
 			</ul>
 			<ul class="icons">
-				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li>
-				<li><a href="#" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a href="https://www.instagram.com/terrizzi_official" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.youtube.com/@terrizzi_official" target="_blank" rel="noopener noreferrer" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
 			</ul>
 		</nav>
 
@@ -123,71 +44,104 @@
 
 			<section class="post">
 				<header class="major">
-					<h1>The Band</h1>
-					<p>Four musicians. One mission. Maximum volume.</p>
+					<h1>De Band</h1>
 				</header>
 
-				<div class="image main"><img src="images/band/IMG_2480_16x9_BW.jpg" alt="Terrizzi" /></div>
+				<div class="image main"><img src="assets/img/band/IMG_2040_16x9_BW.jpg" alt="Terrizzi" /></div>
 
-				<p>Terrizzi is a four-piece rock band from the south of the Netherlands. Rooted in classic rock and fuelled by modern edge, the band delivers high-energy live performances packed with original music and a raw, no-nonsense attitude.</p>
+				<p>Terrizzi is een viertal uit het zuiden van Nederland — vier muzikanten met jarenlange ervaring, elk op hun eigen instrument en elk met een eigen achtergrond. Wat hen samenbracht was niet één toevallige ontmoeting, maar een gedeelde drang: spelen. Live, luid en zonder compromissen.</p>
 
-				<p>Whether performing at festivals, club stages, or private events, Terrizzi brings the kind of live show that leaves audiences wanting more — heavy riffs, driving rhythms, and a relentless stage presence that commands the room.</p>
+				<p>De liefde voor rockklassiekers zit bij alle vier diep verankerd. Van de grote Britse bands uit de jaren zeventig tot de Amerikaanse hardrock die stadions vulde — dat is het fundament waarop Terrizzi gebouwd is. Geen trucjes, geen playback, geen excuses. Wat je ziet is wat je krijgt: vier mensen op een podium die er volledig voor gaan.</p>
 
-				<hr />
+				<p>Op dit moment werkt de band hard aan het voorbereiden van de eerste optredens, het schrijven van eigen materiaal en het vastleggen daarvan in de studio. De basis is gelegd. De rest volgt snel.</p>
 
-				<h2>The Members</h2>
+				<div class="logo-divider">
+					<img src="assets/img/logo/Icon_Trans.svg" alt="" />
+				</div>
+
+				<h2>De leden</h2>
 
 				<!-- Update the role labels below to match who plays what -->
 				<div class="members-grid">
 
 					<div class="member-card">
 						<div class="member-photo">
-							<img src="images/daniel/IMG_2089_9x16_BW.jpg" alt="Daniel" />
+							<img src="assets/img/daniel/IMG_2089_9x16_BW.jpg" alt="Daniel" />
 							<div class="member-info">
 								<span class="member-name">Daniël</span>
-								<span class="member-role">Bass</span>
+								<span class="member-role">Basgitaar</span>
 							</div>
+						</div>
+						<div class="member-bio">
+							<p>Het solide fundament van de band. Daniël legt de basis waarop alles rust — met een groove die je voelt voordat je hem hoort.</p>
+							<ul class="icons">
+								<li><a href="https://www.instagram.com/dvt1092" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.youtube.com/@dvt1092" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
 						</div>
 					</div>
 
 					<div class="member-card">
 						<div class="member-photo">
-							<img src="images/maarten/IMG_2113_9x16_BW.jpg" alt="Maarten" />
+							<img src="assets/img/maarten/IMG_2113_9x16_BW.jpg" alt="Maarten" />
 							<div class="member-info">
 								<span class="member-name">Maarten</span>
-								<span class="member-role">Guitar</span>
+								<span class="member-role">Gitaar</span>
 							</div>
+						</div>
+						<div class="member-bio">
+							<p>Riffs, solo's en alles daartussenin. Maarten brengt het gitaargeluid van Terrizzi met een neus voor het klassieke en een voorliefde voor volume.</p>
+							<ul class="icons">
+								<li><a href="#" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" target="_blank" rel="noopener noreferrer" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
 						</div>
 					</div>
 
 					<div class="member-card">
 						<div class="member-photo">
-							<img src="images/joris/IMG_2147_9x16_BW.jpg" alt="Joris" />
+							<img src="assets/img/joris/IMG_2147_9x16_BW.jpg" alt="Joris" />
 							<div class="member-info">
 								<span class="member-name">Joris</span>
-								<span class="member-role">Vocals</span>
+								<span class="member-role">Zang</span>
 							</div>
+						</div>
+						<div class="member-bio">
+							<p>Een stem die de zaal vult en een podiumaanwezigheid die je niet negeert. Joris is het gezicht en de stem van Terrizzi.</p>
+							<ul class="icons">
+								<li><a href="#" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" target="_blank" rel="noopener noreferrer" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
 						</div>
 					</div>
 
 					<div class="member-card">
 						<div class="member-photo">
-							<img src="images/stefan/IMG_2210_9x16_BW.jpg" alt="Stefan" />
+							<img src="assets/img/stefan/IMG_2210_9x16_BW.jpg" alt="Stefan" />
 							<div class="member-info">
 								<span class="member-name">Stefan</span>
 								<span class="member-role">Drums</span>
 							</div>
 						</div>
+						<div class="member-bio">
+							<p>Het kloppende hart van de band. Stefan houdt het tempo, de energie en de rest van de band in lijn — met precisie en power.</p>
+							<ul class="icons">
+								<li><a href="#" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" target="_blank" rel="noopener noreferrer" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+						</div>
 					</div>
 
 				</div>
 
-				<hr />
+				<div class="logo-divider">
+					<img src="assets/img/logo/Icon_Trans.svg" alt="" />
+				</div>
 
-				<h2>Book Us</h2>
-				<p>Looking to book Terrizzi for your venue, festival, or event? We'd love to hear from you.</p>
+				<h2>Boek ons</h2>
+				<p>Wil je Terrizzi boeken voor jouw locatie, festival of evenement? Neem gerust contact op.</p>
 				<ul class="actions">
-					<li><a href="index.html#footer" class="button primary">Send a Booking Enquiry</a></li>
+					<li><a href="index.html#footer" class="button primary">Stuur een boekingsaanvraag</a></li>
 				</ul>
 
 			</section>
@@ -196,24 +150,12 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<section class="split contact">
-				<section>
-					<h3>Based in</h3>
-					<p>South of the Netherlands</p>
-				</section>
-				<section>
-					<h3>Email</h3>
-					<p><a href="mailto:info@terrizzi.nl">info@terrizzi.nl</a></p>
-				</section>
-				<section>
-					<h3>Follow Us</h3>
-					<ul class="icons alt">
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-spotify"><span class="label">Spotify</span></a></li>
-						<li><a href="#" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-					</ul>
-				</section>
+			<section>
+				<img src="assets/img/logo/Icon_Trans.svg" alt="Terrizzi" class="logo-stamp" />
+				<ul class="icons alt">
+					<li><a href="https://www.instagram.com/terrizzi_official" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.youtube.com/@terrizzi_official" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+				</ul>
 			</section>
 		</footer>
 

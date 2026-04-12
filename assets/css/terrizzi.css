@@ -1,0 +1,214 @@
+/* =============================================================
+   Terrizzi — custom styles
+   ============================================================= */
+
+/* Transitions ------------------------------------------------- */
+#intro { transition: opacity 0.4s ease, transform 0.4s ease !important; }
+#nav   { transition: opacity 0.4s ease, transform 0.4s ease !important; }
+
+/* Intro watermark --------------------------------------------- */
+#intro::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	width: min(40vw, 420px);
+	height: min(40vw, 420px);
+	background: url('../img/logo/Icon_Trans.svg') center / contain no-repeat;
+	opacity: 0.6;
+	filter: invert(1);
+	pointer-events: none;
+	z-index: 0;
+}
+
+#intro > * {
+	position: relative;
+	z-index: 1;
+}
+
+/* Header logo ------------------------------------------------- */
+#header .logo {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.3em;
+}
+
+#header .logo img {
+	height: 3.5em;
+	display: block;
+	filter: brightness(0) invert(1);
+}
+
+#header .logo .logo-name {
+	font-size: 0.55em;
+}
+
+/* Inner pages: taller header (no intro) ----------------------- */
+.page-inner #header {
+	height: 22rem;
+	padding-top: 1rem;
+}
+
+/* Footer ------------------------------------------------------ */
+#footer > section {
+	text-align: center;
+	padding: 2em 0;
+}
+
+.logo-stamp {
+	width: 52px;
+	opacity: 0.55;
+	display: block;
+	margin: 0 auto 1.2em;
+	filter: brightness(0) invert(1);
+}
+
+#footer ul.icons {
+	justify-content: center;
+}
+
+/* Section logo divider (band page) ---------------------------- */
+.logo-divider {
+	text-align: center;
+	margin: 2.5em 0;
+}
+
+.logo-divider img {
+	width: 44px;
+	opacity: 0.3;
+}
+
+/* Member grid (band page) ------------------------------------- */
+.members-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+	margin: 2rem 0 3rem;
+}
+
+.member-card {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.member-card .member-photo {
+	position: relative;
+	aspect-ratio: 2 / 3;
+	overflow: hidden;
+}
+
+.member-card .member-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center top;
+	display: block;
+	transition: transform 0.4s ease;
+}
+
+.member-card:hover .member-photo img {
+	transform: scale(1.04);
+}
+
+.member-card .member-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 2.5rem 1rem 1rem;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.88));
+	text-align: center;
+}
+
+.member-card .member-name {
+	display: block;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 1rem;
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	text-transform: uppercase;
+	line-height: 1.3;
+}
+
+.member-card .member-role {
+	display: block;
+	font-size: 0.75rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.6);
+	margin-top: 0.25rem;
+}
+
+@media (max-width: 980px) {
+	.members-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.members-grid {
+		grid-template-columns: 1fr;
+		gap: 0.75rem;
+	}
+}
+
+/* Member bio (below photo) ------------------------------------ */
+.member-bio {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0.85rem 0.75rem 0.65rem;
+	text-align: center;
+	background: #f7f7f7;
+	border-top: 1px solid #e8e8e8;
+}
+
+.member-bio p {
+	flex: 1;
+	font-size: 0.82rem;
+	line-height: 1.55;
+	color: #666;
+	margin: 0 0 0.6rem;
+}
+
+.member-bio .icons {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Video embeds ------------------------------------------------ */
+.video-embed {
+	border-radius: 8px;
+	display: block;
+}
+
+.video-responsive {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-responsive iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* Desktop spacing reduction ----------------------------------- */
+@media screen and (min-width: 1281px) {
+	#main > .post { padding: 4rem 6rem 3rem 6rem; }
+	#main > *     { padding: 2rem 4rem 1.5rem 4rem; }
+}

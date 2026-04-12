@@ -7,26 +7,26 @@
 <html>
 
 <head>
-	<title>Terrizzi - Rock Band from the Netherlands</title>
+	<title>Terrizzi</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/terrizzi.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="icon" type="image/svg+xml" href="assets/img/logo/Icon_Trans.svg" />
 	<style>
 		/* Mobile/tablet portrait: 9x16 keeps all band members in frame */
 		#wrapper > .bg {
-			background-image: url('images/overlay.png'), linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/band/IMG_2481_9x16_BW.jpg') !important;
+			background-image: url('images/overlay.png'), linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('assets/img/band/IMG_2481_9x16_BW.jpg') !important;
 			background-size: auto, auto, cover !important;
 			background-position: center, center, center !important;
 		}
 		/* Desktop: switch to 16x9 when the nav bar appears (matches '>medium' breakpoint) */
 		@media (min-width: 981px) {
 			#wrapper > .bg {
-				background-image: url('images/overlay.png'), linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/band/IMG_2481_16x9_BW.jpg') !important;
+				background-image: url('images/overlay.png'), linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('assets/img/band/IMG_2481_16x9_BW.jpg') !important;
 			}
 		}
-		#intro { transition: opacity 0.4s ease, transform 0.4s ease !important; }
-		#nav   { transition: opacity 0.4s ease, transform 0.4s ease !important; }
 	</style>
 </head>
 
@@ -37,17 +37,17 @@
 		<!-- Intro -->
 		<section id="intro">
 			<h1>Terrizzi</h1>
-			<p>Four-piece rock from the south of the Netherlands.<br />
-			Raw energy. Heavy riffs. Live and loud.</p>
+			<p>Geen spelletjes. Gewoon spelen.<br />
+			Vier man. Eén podium. Geen rem.</p>
 			<ul class="actions special">
-				<li><a href="live.html" class="button primary large">Live Dates</a></li>
-				<li><a href="media.html" class="button large">Watch &amp; Listen</a></li>
+				<li><a href="live.html" class="button primary large">Optredens</a></li>
+				<li><a href="media.html" class="button large">Bekijk &amp; Luister</a></li>
 			</ul>
 		</section>
 
 		<!-- Header -->
 		<header id="header">
-			<a href="index.html" class="logo">Terrizzi</a>
+			<a href="index.html" class="logo"><img src="assets/img/logo/Icon_Trans.svg" alt="" /><span class="logo-name">Terrizzi</span></a>
 		</header>
 
 		<!-- Nav -->
@@ -59,134 +59,73 @@
 				<li><a href="live.html">Live</a></li>
 			</ul>
 			<ul class="icons">
-				<!-- Replace # with actual social profile URLs -->
-				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li>
-				<li><a href="#" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a href="https://www.instagram.com/terrizzi_official" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.youtube.com/@terrizzi_official" target="_blank" rel="noopener noreferrer" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
 			</ul>
 		</nav>
 
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Band photo + about blurb -->
+			<!-- Watch Now (full width) -->
 			<article class="post featured">
-				<header class="major">
-					<h2><a href="band.html">Who We Are</a></h2>
-					<p>Terrizzi is a four-piece rock band from the south of the Netherlands.<br />
-					We bring energetic performances and original music that captures the spirit<br />
-					of classic rock with a modern edge.</p>
-				</header>
-				<ul class="actions special">
-					<li><a href="band.html" class="button large">Meet the Band</a></li>
-				</ul>
+				<iframe width="100%" height="480"
+					src="https://www.youtube.com/embed/jNQXAC9IVRw"
+					title="Terrizzi - Promo Video"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+					class="video-embed">
+				</iframe>
 			</article>
 
-			<!-- Two columns: Upcoming Shows + Listen -->
-			<section class="posts">
-
-				<!-- Upcoming Shows -->
-				<article>
-					<header>
-						<h2><a href="live.html">Upcoming Shows</a></h2>
-					</header>
-					<div class="table-wrapper">
-						<table class="alt">
-							<thead>
-								<tr>
-									<th>Date</th>
-									<th>Venue</th>
-									<th>City</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- Add upcoming show dates here -->
-								<tr>
-									<td colspan="3"><em>More dates coming soon — follow us on social media to stay updated.</em></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<ul class="actions special">
-						<li><a href="live.html" class="button">All Dates</a></li>
-					</ul>
-				</article>
-
-				<!-- Promo Video -->
-				<article>
-					<header>
-						<h2><a href="media.html">Watch Now</a></h2>
-					</header>
-					<p>Check out our latest promo video — raw energy, heavy riffs, live and loud.</p>
-					<!-- Replace the VIDEO_ID below with the YouTube video ID once uploaded -->
-					<!-- e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ the ID is dQw4w9WgXcQ -->
-					<iframe width="100%" height="215"
-						src="https://www.youtube.com/embed/jNQXAC9IVRw"
-						title="Terrizzi - Promo Video"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-						style="border-radius:8px">
-					</iframe>
-					<ul class="actions special">
-						<li><a href="media.html" class="button">More Media</a></li>
-					</ul>
-				</article>
-
-			</section>
+			<!-- Upcoming Shows (full width) -->
+			<article class="post featured">
+				<header class="major">
+					<h2><a href="live.html">Aankomende optredens</a></h2>
+				</header>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th>Datum</th>
+								<th>Locatie</th>
+								<th>Stad</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Add upcoming show dates here -->
+							<tr>
+								<td colspan="3"><em>Meer data volgen binnenkort — volg ons op social media voor updates.</em></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<ul class="actions special">
+					<li><a href="live.html" class="button large">Alle data</a></li>
+				</ul>
+			</article>
 
 		</div>
 
 		<!-- Footer -->
 		<footer id="footer">
 			<section>
-				<h3>Book Terrizzi</h3>
-				<p>Looking for a band for your event, festival, or venue? Send us a message and we'll get back to you.</p>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" placeholder="Your name or organisation" />
-						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" placeholder="your@email.com" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3" placeholder="Tell us about your event..."></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Enquiry" /></li>
-					</ul>
-				</form>
-			</section>
-			<section class="split contact">
-				<section>
-					<h3>Based in</h3>
-					<p>South of the Netherlands</p>
-				</section>
-				<section>
-					<h3>Email</h3>
-					<p><a href="mailto:info@terrizzi.nl">info@terrizzi.nl</a></p>
-				</section>
-				<section>
-					<h3>Follow Us</h3>
-					<ul class="icons alt">
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-spotify"><span class="label">Spotify</span></a></li>
-						<li><a href="#" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-					</ul>
-				</section>
+				<img src="assets/img/logo/Icon_Trans.svg" alt="Terrizzi" class="logo-stamp" />
+				<ul class="icons alt">
+					<li><a href="https://www.instagram.com/terrizzi_official" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.youtube.com/@terrizzi_official" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+				</ul>
 			</section>
 		</footer>
 
 		<!-- Copyright -->
 		<div id="copyright">
-			<ul><li>&copy; Terrizzi</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+			<ul>
+				<li>&copy; Terrizzi 2026</li>
+				<li><a href="mailto:info@terrizzi.nl">info@terrizzi.nl</a></li>
+				<li>Design: Terrizzi / <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
 		</div>
 
 	</div>
